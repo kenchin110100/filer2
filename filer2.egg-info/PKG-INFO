@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: filer2
+Version: 0.1.1
+Summary: A simple library for file edition
+Home-page: http://orenotame.com/
+Author: kenchin110100
+Author-email: kenchin110100@yahoo.co.jp
+License: MIT
+Description: README.rst
+Keywords: csv,tsv,dump,read,write
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License

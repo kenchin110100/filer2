@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+filer2.egg-info/PKG-INFO
+filer2.egg-info/SOURCES.txt
+filer2.egg-info/dependency_links.txt
+filer2.egg-info/requires.txt
+filer2.egg-info/top_level.txt
+filer2.egg-info/zip-safe
