@@ -4,7 +4,7 @@ setup
 """
 import setuptools
 
-version = '0.1.1'
+version = '0.1.3'
 
 setuptools.setup(
     name='filer2', # パッケージ名
@@ -13,7 +13,7 @@ setuptools.setup(
     # 詳細は http://pypi.python.org/pypi?:action=list_classifiers を参照
     classifiers=[
         "Development Status :: 3 - Alpha",
-        "Environment :: Console",
+        "Environment :: MacOS X",
         "Intended Audience :: Developers",
         "Natural Language :: English",
         "Operating System :: OS Independent",

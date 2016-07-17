@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: filer2
-Version: 0.1.1
+Version: 0.1.3
 Summary: A simple library for file edition
 Home-page: http://orenotame.com/
 Author: kenchin110100
@@ -10,7 +10,7 @@ Description: README.rst
 Keywords: csv,tsv,dump,read,write
 Platform: UNKNOWN
 Classifier: Development Status :: 3 - Alpha
-Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
 Classifier: Intended Audience :: Developers
 Classifier: Natural Language :: English
 Classifier: Operating System :: OS Independent

@@ -1,6 +1,9 @@
+MANIFEST.in
 README.rst
 setup.cfg
 setup.py
+filer2/__init__.py
+filer2/filer2.py
 filer2.egg-info/PKG-INFO
 filer2.egg-info/SOURCES.txt
 filer2.egg-info/dependency_links.txt
