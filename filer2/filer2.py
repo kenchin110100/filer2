@@ -10,60 +10,77 @@ import pickle
 class Filer(object):
 
     @staticmethod
-    def readcsv(path, option="rb"):
+    def read_csv(path, option="rb"):
         f = open(path, option)
-        dataReader = csv.reader(f)
-        arr = [row for row in dataReader]
-        return arr
+        try:
+            dataReader = csv.reader(f)
+            arr = [row for row in dataReader]
+            return arr
+        finally:
+            f.close()
 
     @staticmethod
-    def writecsv(arr, path, option="ab"):
+    def write_csv(arr, path, option="ab"):
         f = open(path, option)
-        dataWriter = csv.writer(f)
-        dataWriter.writerows(arr)
-        f.close()
+        try:
+            dataWriter = csv.writer(f)
+            dataWriter.writerows(arr)
+        finally:
+            f.close()
 
     @staticmethod
-    def readtsv(path, option="rb"):
+    def read_tsv(path, option="rb"):
         f = open(path, option)
-        dataReader = csv.reader(f, delimiter="\t")
-        arr = [row for row in dataReader]
-        return arr
+        try:
+            dataReader = csv.reader(f, delimiter="\t")
+            arr = [row for row in dataReader]
+        finally:
+            return arr
 
     @staticmethod
-    def writetsv(arr, path, option="ab"):
+    def write_tsv(arr, path, option="ab"):
         f = open(path, option)
-        dataWriter = csv.writer(f, delimiter="\t")
-        dataWriter.writerows(arr)
-        f.close()
+        try:
+            dataWriter = csv.writer(f, delimiter="\t")
+            dataWriter.writerows(arr)
+        finally:
+            f.close()
 
     @staticmethod
-    def readdump(path, option="r"):
+    def read_pkl(path, option="r"):
         f = open(path, option)
-        arr = pickle.load(f)
-        f.close()
-        return arr
+        try:
+            arr = pickle.load(f)
+            return arr
+        finally:
+            f.close()
 
     @staticmethod
-    def writedump(arr, path, option="w"):
+    def write_pkl(arr, path, option="w"):
         f = open(path, option)
-        pickle.dump(arr, f)
-        f.close()
+        try:
+            pickle.dump(arr, f)
+        finally:
+            f.close()
 
     @staticmethod
-    def readtxt(path, option='r', LF='\n'):
+    def read_txt(path, option='r', LF='\n'):
         f = open(path)
-        lines = f.readlines()
-        f.close()
-        lines = [row.rstrip(LF) for row in lines]
-        return lines
+        try:
+            lines = f.readlines()
+            lines = [row.rstrip(LF) for row in lines]
+            return lines
+        finally:
+            f.close()
 
     @staticmethod
-    def writetxt(arr, path, option="ab", LF='\n'):
+    def write_txt(arr, path, option="ab", LF='\n'):
         f = open(path, option)
-        for sentence in arr:
-            f.writelines(sentence+LF)
-        f.close()
+        try:
+            for sentence in arr:
+                f.writelines(sentence+LF)
+        finally:
+            f.close()
 
     @staticmethod
     def conv_encoding(data):

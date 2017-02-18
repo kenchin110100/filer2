@@ -4,7 +4,7 @@ setup
 """
 import setuptools
 
-version = '0.1.3'
+version = '0.1.4'
 
 setuptools.setup(
     name='filer2', # パッケージ名
@@ -24,13 +24,13 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
     ],
     # キーワードを書いておく
-    keywords='csv, tsv, dump, read, write',
+    keywords='csv, tsv, pkl, read, write',
     # 作者の名前
     author='kenchin110100',
     # 連絡先
     author_email='kenchin110100@yahoo.co.jp',
     # GitHubのリポジトリとか
-    url='http://orenotame.com/',
+    url='https://github.com/kenchin110100',
     # ライセンス
     license='MIT',
     packages=setuptools.find_packages(exclude=['examples', 'tests']),
@@ -38,6 +38,4 @@ setuptools.setup(
     zip_safe=True,
     # Pypiのページで表示する説明文(README)
     long_description='README.rst',
-    # インストールする依存パッケージ
-    install_requires=["numpy"],
 )
